@@ -43,3 +43,5 @@ class Credentials:
         '''
         returns the credentials list
         ''' 
+
+        return cls.credentials_list

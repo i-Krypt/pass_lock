@@ -4,7 +4,7 @@ class User:
     '''
 
 
-    accounts_list = []
+    user_list = []
 
     def __init__(self, username, password):
 

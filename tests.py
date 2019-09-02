@@ -71,6 +71,14 @@ class Tests(unittest.TestCase):
         self.new_credentials.delete_credentials()
         self.assertEqual(len(Credentials.credentials_list),1)
 
+    
+    def test_display_all_credentials(self):
+        '''
+        returns a list of all contacts saved.
+        '''
+
+        self.assertEqual(Credentials.display_credentials(),Credentials.credentials_list)
+
 
 if __name__ == '__main__':
     unittest.main()

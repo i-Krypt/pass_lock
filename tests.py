@@ -64,6 +64,13 @@ class Tests(unittest.TestCase):
         credentials list
         '''
 
+        self.new_credentials.save_credentials()
+        test_credentials = Credentials('Twitter', 'Jeff', '12345')
+        test_credentials.save_credentials()
+
+        self.new_credentials.delete_credentials()
+        self.assertEqual(len(Credentials.credentials_list),1)
+
 
 if __name__ == '__main__':
     unittest.main()

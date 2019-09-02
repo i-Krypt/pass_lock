@@ -2,20 +2,26 @@ from  user import User
 from credentials import Credentials
 
 #create a new user 
-def create_user(username, account, password):
+def create_user(username, password):
 
     '''
     Function to create a new user
     '''
 
-    new_user = User(username, account, password)
+    new_user = User(username, password)
     return new_user
 
 
 #save user
-def create_credentials(user):
+def create_user(user):
     '''
-    function to save credential
+    function to save user
     '''
 
-    credentials.save_credentials()
+    user.save_user()
+
+#delete credentials
+def del_credentials(credentials):
+    '''
+    function to delete credentials
+    '''

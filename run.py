@@ -36,3 +36,14 @@ def display_credentials():
     '''
 
     return Credentials.display_credentials()
+
+
+
+#main function.
+
+def main():
+    print('Enter username')
+
+            user_username = input()
+
+            print(f'')

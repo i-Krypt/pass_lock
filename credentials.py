@@ -36,3 +36,11 @@ class Credentials:
         '''
 
         Credentials.credentials_list.remove(self)
+
+    
+    def test_display_all_credentials(self):
+        '''
+        returns a list of all contacts saved.
+        '''
+
+        self.assertEqual(Credentials.display_credentials(),Credentials.credentials_list)    

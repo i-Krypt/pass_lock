@@ -6,12 +6,14 @@ class User:
     '''
 
 
-    def __init__(self, username, password):
+    def __init__(self, username, account, password):
 
         '''
         Args:
         username: New username
+        account: New account
         password: New password
+
         '''
 
         self.username = username

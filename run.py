@@ -25,3 +25,5 @@ def del_credentials(credentials):
     '''
     function to delete credentials
     '''
+
+    credentials.delete_credentials()

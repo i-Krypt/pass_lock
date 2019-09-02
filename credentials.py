@@ -34,3 +34,5 @@ class Credentials:
         method deletes a saved credential from the 
         credentials_list
         '''
+
+        Credentials.credentials_list.remove(self)

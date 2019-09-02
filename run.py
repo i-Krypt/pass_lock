@@ -27,3 +27,12 @@ def del_credentials(credentials):
     '''
 
     credentials.delete_credentials()
+
+
+#displaying credentials
+def display_credentials():
+    '''
+    function that returns all the saved contacts
+    '''
+
+    return Credentials.display_credentials()

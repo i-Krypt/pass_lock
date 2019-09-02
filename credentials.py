@@ -6,13 +6,6 @@ class Credentials:
 
     credentials_list = []
 
-    def save_credentials(self):
-
-        '''
-        saves user credentials into credentials list
-        '''
-
-        Credentials.credentials_list.append(self)
 
     def __init__(self, account, username, password):
 
@@ -26,3 +19,12 @@ class Credentials:
         self.account = account
         self.username = username
         self.password = password
+
+    def save_credentials(self):
+
+        '''
+        saves user credentials into credentials list
+        '''
+
+        Credentials.credentials_list.append(self)
+

@@ -14,7 +14,17 @@ class Tests(unittest.TestCase):
         '''
         runs before each test case
         ''' 
-        self.new_user = User('Jeff','12345')   
+        self.new_user = User('Jeff','12345') 
+        self.new_credentials = Credentials('Twitter','Jeff','12345')  
+
+
+    def tearDown(self):
+        '''
+        cleans up after each test case has run
+        '''
+
+        Credentials.credentials_list = []
+
 
     def test_init(self):
 
@@ -31,9 +41,29 @@ class Tests(unittest.TestCase):
         test case to test if the credentials object is saved
         into credentials list
         '''
-
+        
         self.new_credentials.save_credentials()
         self.assertEqual(len(Credentials.credentials_list),1)
+
+    def test_save_multiple_credentials(self):
+
+        '''
+        to check if we can save multiple credentials.
+        '''    
+    
+        self.new_credentials.save_credentials()
+        test_credentials = Credentials('Twitter', 'Jeff', '12345')
+        test_credentials.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list),2)
+
+
+    def test_delete_credentials(self):
+
+        '''
+        tests if credentials can be deleted from the
+        credentials list
+        '''
+
 
 if __name__ == '__main__':
     unittest.main()

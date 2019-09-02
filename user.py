@@ -1,3 +1,5 @@
+from credentials import Credentials
+
 class User:
     '''
     class that takes in user info.
@@ -11,6 +13,6 @@ class User:
         username: New username
         password: New password
         '''
-        
+
         self.username = username
         self.password = password

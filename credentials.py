@@ -1,4 +1,8 @@
+import random
+import string
+
 class Credentials:
+
 
     '''
     class that takes in user credentials.
@@ -27,6 +31,16 @@ class Credentials:
         '''
 
         Credentials.credentials_list.append(self)
+
+    
+    def generate_password(size=8,char=string.ascii_uppercase+string.ascii_lowercase+string.digits):
+
+        '''
+        function that generates passwords
+        '''
+
+        gen_pass = ''.join(random.choice(char)for _ in range(size))
+        return gen_pass
 
     def delete_credentials(self):
 

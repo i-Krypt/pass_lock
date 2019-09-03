@@ -1,4 +1,4 @@
-# Password Lock App
+# Pass_lock
 
 ### **This project was done using Python 3.6.** 
 
@@ -10,8 +10,8 @@
 
 # DESCRIPTION
 
-Password Lock is a terminal-based python application. It is an amazing application that will help us manage our passwords and even generate new passwords for us. 
-You can store your existing account login details and also generate new login details with Password Lock.
+Password Lock is a terminal-based python application. 
+You can store your existing account login details and also generate new login details with Pass Lock.
 
 
 ## User Story
